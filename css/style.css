@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Mulish', sans-serif;
+	height: 100vh;
+	background-color: #f4f4f4;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin:0;
+	overflow: hidden;
+}
+
+.panel-container{
+	width: 700px;
+	background-color: #fff;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.header{
+	width: 100%;
+	background-color: blue;
+	color:#fff;
+
+	position: relative;
+}
+
+.header p{
+	text-align: center;
+	font-weight: 400;
+}
+
+.header i{
+	position: absolute;
+	top: 15px;
+	right: 10px;
+
+	cursor: pointer;
+}
+
+strong{
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+.ratings-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.rating{
+	width: 100px;
+	padding: 30px;
+	margin:20px 10px;
+	border-radius: 10px;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	cursor: pointer;
+}
+
+.rating:hover,
+.rating.active{
+
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+}
+
+.rating:hover small,
+.rating.active small{
+	color:blue;
+}
+
+
+
+.rating small{
+	display: inline-block;
+	margin-top: 10px;
+}
+
+
+.rating img{
+	width: 40px;
+	/*margin-left:20px;*/
+	object-fit: cover;
+}
+
+textarea{
+	width: 70%;
+	border:0;
+	border-radius: 10px;
+	padding:10px 40px 30px 20px;
+	
+	background-color: #f0f0f0;
+}
+
+textarea:focus{
+	outline: 0;
+}
+
+.btn{
+	width: 70%;
+	color:#fff;
+	background-color: blue;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	padding:10px 0;
+	border:0;
+	border-radius: 5px;
+
+	cursor: pointer;
+}
+
+.btn:active{
+	transform: scale(0.98);
+}
+
+@media(max-width: 700px){
+	.panel-container{
+		width: 500px;
+	}
+}
